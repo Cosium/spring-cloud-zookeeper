@@ -6,7 +6,7 @@
 
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-zookeeper</artifactId>
-	<version>1.0.3.RELEASE</version>
+	<version>1.0.3.0.cos-fork-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Spring Cloud Zookeeper</name>
 	<description>Spring Cloud Zookeeper</description>
@@ -20,15 +20,28 @@
 	</parent>
 
 	<scm>
-		<url>https://github.com/spring-cloud/spring-cloud-zookeeper</url>
+		<url>https://github.com/Cosium/spring-cloud-zookeeper</url>
 		<connection>
-			scm:git:git://github.com/spring-cloud/spring-cloud-zookeeper.git
+			scm:git:git://github.com/Cosium/spring-cloud-zookeeper.git
 		</connection>
 		<developerConnection>
-			scm:git:ssh://git@github.com/spring-cloud/spring-cloud-zookeeper.git
+			scm:git:ssh://git@github.com/Cosium/spring-cloud-zookeeper.git
 		</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>cosium-repo</id>
+			<name>Internal Release Repository</name>
+			<url>https://repo.cosium.com/repository/internal/</url>
+		</repository>
+		<snapshotRepository>
+			<id>cosium-repo-snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>https://repo.cosium.com/repository/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<modules>
 		<module>spring-cloud-zookeeper-dependencies</module>
