@@ -116,4 +116,55 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<distributionManagement>
+		<repository>
+			<id>cosium-repo</id>
+			<name>Internal Release Repository</name>
+			<url>https://repo.cosium.com/repository/internal/</url>
+		</repository>
+		<snapshotRepository>
+			<id>cosium-repo-snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>https://repo.cosium.com/repository/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>cosium-repo</id>
+			<name>Internal Release Repository</name>
+			<url>https://repo.cosium.com/repository/internal/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>cosium-repo-snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>https://repo.cosium.com/repository/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>cosium-repo</id>
+			<name>Internal Release Repository</name>
+			<url>https://repo.cosium.com/repository/internal/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>cosium-repo-snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>https://repo.cosium.com/repository/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
