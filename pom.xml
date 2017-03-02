@@ -31,6 +31,10 @@
 	</scm>
 
 	<distributionManagement>
+		<site>
+			<id>spring-docs</id>
+			<url/>
+		</site>
 		<repository>
 			<id>cosium-repo</id>
 			<name>Internal Release Repository</name>
