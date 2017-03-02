@@ -43,6 +43,25 @@
 		</snapshotRepository>
 	</distributionManagement>
 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>cosium-repo</id>
+			<name>Internal Release Repository</name>
+			<url>https://repo.cosium.com/repository/internal/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>cosium-repo-snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>https://repo.cosium.com/repository/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<modules>
 		<module>spring-cloud-zookeeper-dependencies</module>
 		<module>spring-cloud-zookeeper-core</module>
