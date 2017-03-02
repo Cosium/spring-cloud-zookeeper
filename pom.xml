@@ -100,7 +100,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugin</groupId>
 					<artifactId>maven-site-plugin</artifactId>
-					<version>LATEST</version>
+					<version>3.3</version>
 					<configuration>
 						<skip>true</skip>
 						<skipDeploy>true</skipDeploy>
@@ -163,6 +163,15 @@
 			</plugins>
 		</pluginManagement>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugin</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<skip>true</skip>
+					<skipDeploy>true</skipDeploy>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
